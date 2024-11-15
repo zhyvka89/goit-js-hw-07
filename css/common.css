@@ -13,6 +13,41 @@ body {
   line-height: 1.5;
 }
 
+#categories,
+#categories .item ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#categories .item {
+  width: 392px;
+  background: #f6f6fe;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+#categories .item h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+#categories .item ul li {
+  border: 1px solid #212121;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  padding: 8px 16px;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
 .gallery {
   width: 1400px;
   display: flex;
@@ -90,6 +125,12 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
+}
+
+.login-form button:hover,
+.change-color:hover,
+button[data-create]:hover {
+  background: #6c8cff;
 }
 
 .widget {
@@ -172,4 +213,7 @@ button[data-create] {
 
 button[data-destroy] {
   background: #ff4e4e;
+}
+button[data-destroy]:hover {
+  background: #ff7070;
 }
