@@ -120,3 +120,56 @@ body {
   outline: none;
   border: none;
 }
+
+#controls,
+#boxes {
+  margin: 0 auto;
+  border-radius: 8px;
+  padding: 32px;
+  background: #f6f6fe;
+}
+
+#controls {
+  display: flex;
+  gap: 16px;
+  width: 486px;
+  margin-bottom: 16px;
+}
+
+#controls input {
+  width: 150px;
+  height: 40px;
+  border: 1px solid #808080;
+  border-radius: 8px;
+  padding: 8px 16px;
+  outline: none;
+}
+
+#boxes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 44px;
+}
+
+button[data-create],
+button[data-destroy] {
+  width: 120px;
+  border-radius: 8px;
+  padding: 8px 16px; 
+  color: #fff;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+}
+
+button[data-create] {
+  background: #4e75ff;
+}
+
+button[data-destroy] {
+  background: #ff4e4e;
+}
