@@ -30,7 +30,7 @@ const images = [
 
 const gallery = document.querySelector('.gallery');
 
-images.forEach(image => {
+const elements = images.map(image => {
   const item = document.createElement('li');
   item.classList.add('item');
 
@@ -40,5 +40,8 @@ images.forEach(image => {
   img.classList.add('item-image');
   
   item.append(img);
-  gallery.append(item);
-})
+  
+  return item;
+});
+
+gallery.append(...elements);
