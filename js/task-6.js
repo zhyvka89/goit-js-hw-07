@@ -18,13 +18,15 @@ destroyBtn.addEventListener('click', destroyBoxes);
 function createBoxes(amount) {
   let dimentionW = 30;
   let dimentionH = 30;
+  const elements = [];
   for (let index = 0; index < amount; index++) {
     const div = document.createElement('div');
     div.style.width = `${dimentionW += 10}px`;
     div.style.height = `${dimentionH += 10}px`;
     div.style.backgroundColor = getRandomHexColor();
-    boxes.append(div);
+    elements.push(div)
   }
+  boxes.append(...elements);
 }
 
 function destroyBoxes() {
